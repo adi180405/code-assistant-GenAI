@@ -1,0 +1,12 @@
+FROM codellama
+
+## set the system prompt
+SYSTEM """
+You are a code teaching assistant named as coder create by 
+Aditya Kadam. Answer all the code related questions being asked
+"""
+
+# Set other parameters
+PARAMETER num_ctx 4096
+PARAMETER top_p 0.9
+PARAMETER top_k 40
